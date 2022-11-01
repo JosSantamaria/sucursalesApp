@@ -1,0 +1,83 @@
+<header class="site-header">
+  <div class="container-fluid">
+
+    <a href="#" class="site-logo">
+      <img class="hidden-md-down" src="../../../assets/img/logo-2.png" alt="">
+      <img class="hidden-lg-up" src="../../../assets/img/logo-2-mob.png" alt="">
+    </a>
+
+    <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
+      <span>toggle menu</span>
+    </button>
+
+    <button class="hamburger hamburger--htla">
+      <span>menu</span>
+    </button>
+
+    <div class="site-header-content">
+
+      <div class="site-header-content-in">
+
+        <div class="site-header-shown">
+
+          <!-- Menu de usuario -->
+          <div class="dropdown user-menu">
+            <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <img src="../../assets/img/avatar-2-64.png" alt="">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
+              <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Perfil</a>
+              <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Ajustes</a>
+              <a class="dropdown-item" href="#"><span
+                  class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="">
+                <span class="font-icon glyphicon glyphicon-log-out">
+                </span>Cerrar Sesion</a>
+            </div>
+          </div>
+        </div>
+        <!--.site-header-shown-->
+
+        <div class="mobile-menu-right-overlay">
+        </div>
+        <!-- revisar class -->
+        <div class="site-header-content-shown">
+
+          <div class="dropdown dropdown-typical">
+            <a href="" class="dropdown-toggle no-arr">
+              <span class="font-icon font-icon-user"></span>
+              <span id="usr_nombre" class="lblcontactomx" value="nombre"></span>
+
+
+              <span class="label  label-custom label-pill label-primary"> Usuario </span>
+
+              <!-- <span class="label  label-custom label-pill label-warning"> Soporte </span> -->
+            </a>
+          </div>
+
+        </div>
+
+        <div class="site-header-collapsed">
+
+          <div class="site-header-collapsed-in">
+          </div>
+          <!--.site-header-collapsed-in-->
+
+        </div>
+        <!--.site-header-collapsed-->
+
+      </div>
+      <!--site-header-content-in-->
+
+    </div> <!--  container-fluid -->
+
+
+  </div>
+
+</header>
+<div>
+  <app-side-nav></app-side-nav>
+</div>

@@ -6,8 +6,51 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+  <!-- estilos principales de la app -->
+  <link rel="stylesheet" href="./assets/css/separate/vendor/fancybox.min.css">
+  <link rel="stylesheet" href="./assets/css/separate/pages/activity.min.css">
+  <link rel="stylesheet" href="./assets/css/lib/font-awesome/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- ErrorPageComponent CSS -->
+  <link rel="stylesheet" href="./assets/css/separate/pages/error.min.css">
+  <!-- LoginComponent -->
+  <link rel="stylesheet" href="./assets/css/separate/pages/login.min.css">
+
+  </head>
 <body>
+  <!-- Aplicacion Raiz (Principal) -->
   <app-root></app-root>
+
+
+
+  <!-- Librerias de JS necesarias -->
+  <script src="./assets/js/lib/jquery/jquery.min.js"></script>
+	<script src="./assets/js/lib/tether/tether.min.js"></script>
+	<script src="./assets/js/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="./assets/js/plugins.js"></script>
+
+  <!-- Script Principal de la aplicacion -->
+  <script src="./assets/js/app.js"></script>
+
+  <!-- Script LoginComponent -->
+  <script>
+    $(function() {
+        $('.page-center').matchHeight({
+            target: $('html')
+        });
+
+        $(window).resize(function(){
+            setTimeout(function(){
+                $('.page-center').matchHeight({ remove: true });
+                $('.page-center').matchHeight({
+                    target: $('html')
+                });
+            },100);
+        });
+    });
+</script>
+
 </body>
 </html>
