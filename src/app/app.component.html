@@ -1,10 +1,16 @@
 
-<!-- App Menu -->
-<div *ngIf="menu">
-    <app-menu  ></app-menu>
+<div>
+
+  <div *ngIf="login">
+    <app-login></app-login>
+  </div>
+
+      <!-- App Menu -->
+    <div *ngIf="menu">
+      <app-menu  ></app-menu>
+    </div>
+
 </div>
 
 <!-- SPA -->
-<div>
-    <router-outlet></router-outlet>
-</div>
+

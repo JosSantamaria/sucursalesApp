@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PagesModule } from './pages/pages.module';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/components/login/login.component';
 import { SharedModule } from './shared/shared.module';
+import { MapComponent } from './maps/components/map/map.component';
+import { TaskComponent } from './tasks/components/task/task.component';
 
 
 
@@ -14,7 +16,9 @@ import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    MapComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

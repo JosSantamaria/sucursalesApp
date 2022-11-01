@@ -11,6 +11,8 @@ export class AppComponent {
 
   menu=false;
 
+  login=true;
+
   mostrarMenu(){
 
   }

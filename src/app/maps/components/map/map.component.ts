@@ -1,22 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-maps',
-  templateUrl: './maps.component.html',
+  selector: 'app-map',
+  templateUrl: './map.component.html',
   styles: [
   ]
 })
-export class MapsComponent implements OnInit {
+export class MapComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
 
   zonaCampeche = true;
   zonaCarmen = false;
   zonaMerida = false;
   zonaNorte = false;
   zonaSur = false;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
